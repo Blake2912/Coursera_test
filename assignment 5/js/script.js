@@ -1,4 +1,4 @@
-$(function () { // Same as document.addEventListener("DOMContentLoaded"...
+$(function (global) { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
   $("#navbarToggle").blur(function (event) {
@@ -415,7 +415,7 @@ function insertItemPortionName(html,
 global.$dc = dc;
 
 })(window);
-etrieve all categories from the server instead of
+// retrieve all categories from the server instead of
 // simply requesting home HTML snippet. We now also have another function
 // called buildAndShowHomeHTML that will receive all the categories from the server
 // and process them: choose random category, retrieve home HTML snippet, insert that
